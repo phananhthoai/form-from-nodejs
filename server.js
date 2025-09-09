@@ -6,11 +6,11 @@ const app = express();
 app.use(express.json());
 
 // ===== ENV =====
-const CHATWOOT_BASE = process.env.CHATWOOT_BASE || "https://chatwoot.hellking.dev";
+const CHATWOOT_BASE = process.env.CHATWOOT_BASE || "https://<chatwoot>";
 const ACCOUNT_ID    = process.env.ACCOUNT_ID || "1";
 const INBOX_ID      = process.env.INBOX_ID || "2"; // có thể để trống nếu chỉ lưu contact
 const API_TOKEN     = process.env.CW_API_TOKEN;   // bắt buộc
-const ALLOW_ORIGIN  = process.env.ALLOW_ORIGIN || "https://bachuchientruong.online";
+const ALLOW_ORIGIN  = process.env.ALLOW_ORIGIN || "https://<your-website>";
 const WEBHOOK_TOKEN = process.env.WEBHOOK_TOKEN || "";
 
 // SMTP
